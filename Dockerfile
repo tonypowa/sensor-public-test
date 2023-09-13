@@ -11,4 +11,7 @@ RUN pip3 install -r requirements.txt
 
 COPY app app
 
+ENV PYTHONUNBUFFERED 1
+ENV PYTHONPATH=/app
+
 CMD ["python3", "app/main.py"]
